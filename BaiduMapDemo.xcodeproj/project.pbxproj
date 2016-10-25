@@ -15,6 +15,8 @@
 		66872B531DAF861000D4B58E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66872B521DAF861000D4B58E /* Assets.xcassets */; };
 		66872B561DAF861000D4B58E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66872B541DAF861000D4B58E /* LaunchScreen.storyboard */; };
 		66872B5F1DB0C82100D4B58E /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 66872B5E1DB0C82100D4B58E /* test.jpg */; };
+		66D76F041DBFB892000571BE /* TestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D76F031DBFB892000571BE /* TestObject.m */; };
+		66D76F071DBFB8A0000571BE /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D76F061DBFB8A0000571BE /* TestViewController.m */; };
 		D9990669EE95EE5E0EA3B8B3 /* libPods-BaiduMapDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14D31D41780AAC28660C8017 /* libPods-BaiduMapDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +35,10 @@
 		66872B551DAF861000D4B58E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		66872B571DAF861000D4B58E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		66872B5E1DB0C82100D4B58E /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
+		66D76F021DBFB892000571BE /* TestObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestObject.h; sourceTree = "<group>"; };
+		66D76F031DBFB892000571BE /* TestObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestObject.m; sourceTree = "<group>"; };
+		66D76F051DBFB8A0000571BE /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		66D76F061DBFB8A0000571BE /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		BA7EF1D148100461A5FD526B /* Pods-BaiduMapDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaiduMapDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaiduMapDemo/Pods-BaiduMapDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,6 +87,10 @@
 				66872B471DAF861000D4B58E /* AppDelegate.m */,
 				66872B491DAF861000D4B58E /* ViewController.h */,
 				66872B4A1DAF861000D4B58E /* ViewController.m */,
+				66D76F021DBFB892000571BE /* TestObject.h */,
+				66D76F031DBFB892000571BE /* TestObject.m */,
+				66D76F051DBFB8A0000571BE /* TestViewController.h */,
+				66D76F061DBFB8A0000571BE /* TestViewController.m */,
 				66872B4C1DAF861000D4B58E /* Main.storyboard */,
 				66872B521DAF861000D4B58E /* Assets.xcassets */,
 				66872B541DAF861000D4B58E /* LaunchScreen.storyboard */,
@@ -241,8 +251,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66D76F071DBFB8A0000571BE /* TestViewController.m in Sources */,
 				66872B4B1DAF861000D4B58E /* ViewController.m in Sources */,
 				66872B511DAF861000D4B58E /* BaiduMapDemo.xcdatamodeld in Sources */,
+				66D76F041DBFB892000571BE /* TestObject.m in Sources */,
 				66872B481DAF861000D4B58E /* AppDelegate.m in Sources */,
 				66872B451DAF861000D4B58E /* main.m in Sources */,
 			);
