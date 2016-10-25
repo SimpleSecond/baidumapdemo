@@ -14,9 +14,13 @@
 		66872B511DAF861000D4B58E /* BaiduMapDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 66872B4F1DAF861000D4B58E /* BaiduMapDemo.xcdatamodeld */; };
 		66872B531DAF861000D4B58E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66872B521DAF861000D4B58E /* Assets.xcassets */; };
 		66872B561DAF861000D4B58E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66872B541DAF861000D4B58E /* LaunchScreen.storyboard */; };
+		66872B5F1DB0C82100D4B58E /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 66872B5E1DB0C82100D4B58E /* test.jpg */; };
+		D9990669EE95EE5E0EA3B8B3 /* libPods-BaiduMapDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14D31D41780AAC28660C8017 /* libPods-BaiduMapDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0151DA1FB93BEC467F2B0DF8 /* Pods-BaiduMapDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaiduMapDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaiduMapDemo/Pods-BaiduMapDemo.release.xcconfig"; sourceTree = "<group>"; };
+		14D31D41780AAC28660C8017 /* libPods-BaiduMapDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BaiduMapDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		66872B401DAF861000D4B58E /* BaiduMapDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaiduMapDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66872B441DAF861000D4B58E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		66872B461DAF861000D4B58E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -28,6 +32,8 @@
 		66872B521DAF861000D4B58E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66872B551DAF861000D4B58E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		66872B571DAF861000D4B58E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66872B5E1DB0C82100D4B58E /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
+		BA7EF1D148100461A5FD526B /* Pods-BaiduMapDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaiduMapDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaiduMapDemo/Pods-BaiduMapDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +41,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9990669EE95EE5E0EA3B8B3 /* libPods-BaiduMapDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1BBAF40380D92AB067062733 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14D31D41780AAC28660C8017 /* libPods-BaiduMapDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		66872B371DAF861000D4B58E = {
 			isa = PBXGroup;
 			children = (
 				66872B421DAF861000D4B58E /* BaiduMapDemo */,
 				66872B411DAF861000D4B58E /* Products */,
+				8E1FD58C69127C1F523DD973 /* Pods */,
+				1BBAF40380D92AB067062733 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,6 +85,7 @@
 				66872B521DAF861000D4B58E /* Assets.xcassets */,
 				66872B541DAF861000D4B58E /* LaunchScreen.storyboard */,
 				66872B571DAF861000D4B58E /* Info.plist */,
+				66872B5D1DB0C7E000D4B58E /* img */,
 				66872B4F1DAF861000D4B58E /* BaiduMapDemo.xcdatamodeld */,
 				66872B431DAF861000D4B58E /* Supporting Files */,
 			);
@@ -82,6 +100,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		66872B5D1DB0C7E000D4B58E /* img */ = {
+			isa = PBXGroup;
+			children = (
+				66872B5E1DB0C82100D4B58E /* test.jpg */,
+			);
+			name = img;
+			sourceTree = "<group>";
+		};
+		8E1FD58C69127C1F523DD973 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BA7EF1D148100461A5FD526B /* Pods-BaiduMapDemo.debug.xcconfig */,
+				0151DA1FB93BEC467F2B0DF8 /* Pods-BaiduMapDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -89,9 +124,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 66872B5A1DAF861000D4B58E /* Build configuration list for PBXNativeTarget "BaiduMapDemo" */;
 			buildPhases = (
+				61C0AB3E0B0F9318E67CEBA0 /* [CP] Check Pods Manifest.lock */,
 				66872B3C1DAF861000D4B58E /* Sources */,
 				66872B3D1DAF861000D4B58E /* Frameworks */,
 				66872B3E1DAF861000D4B58E /* Resources */,
+				DBF127847BA89BCF21126BEC /* [CP] Embed Pods Frameworks */,
+				675A212D94A86A8A9408ADF8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -113,6 +151,7 @@
 				TargetAttributes = {
 					66872B3F1DAF861000D4B58E = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = Z5AXWS32SW;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -141,12 +180,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				66872B561DAF861000D4B58E /* LaunchScreen.storyboard in Resources */,
+				66872B5F1DB0C82100D4B58E /* test.jpg in Resources */,
 				66872B531DAF861000D4B58E /* Assets.xcassets in Resources */,
 				66872B4E1DAF861000D4B58E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		61C0AB3E0B0F9318E67CEBA0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		675A212D94A86A8A9408ADF8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BaiduMapDemo/Pods-BaiduMapDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DBF127847BA89BCF21126BEC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BaiduMapDemo/Pods-BaiduMapDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		66872B3C1DAF861000D4B58E /* Sources */ = {
@@ -272,8 +360,10 @@
 		};
 		66872B5B1DAF861000D4B58E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA7EF1D148100461A5FD526B /* Pods-BaiduMapDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Z5AXWS32SW;
 				INFOPLIST_FILE = BaiduMapDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.BaiduMapDemo;
@@ -283,8 +373,10 @@
 		};
 		66872B5C1DAF861000D4B58E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0151DA1FB93BEC467F2B0DF8 /* Pods-BaiduMapDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Z5AXWS32SW;
 				INFOPLIST_FILE = BaiduMapDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.BaiduMapDemo;
@@ -311,6 +403,7 @@
 				66872B5C1DAF861000D4B58E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

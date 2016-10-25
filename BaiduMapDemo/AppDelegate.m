@@ -7,8 +7,15 @@
 //
 
 #import "AppDelegate.h"
+#import <BaiduMapAPI_Base/BMKBaseComponent.h>
+#import "ViewController.h"
 
 @interface AppDelegate ()
+{
+    //UIWindow *window;
+    UINavigationController *navigationController;
+    BMKMapManager *_mapManager;
+}
 
 @end
 
@@ -17,6 +24,26 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    // 要使用百度地图，请先启动BaiduMapManager
+    _mapManager = [[BMKMapManager alloc] init];
+    // 如果要关注网络及授权验证事件，请设定 generalDelegate参数
+    BOOL ret = [_mapManager start:@"GGS35sglX3ypPSzcKB7cUOj9h7oKyICA" generalDelegate:nil];
+    if (!ret) {
+        NSLog(@"manager start failed!");
+    } else {
+        NSLog(@"manager start success!");
+    }
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    
+    ViewController *controller = [[ViewController alloc] init];
+    navigationController = [[UINavigationController alloc] initWithRootViewController:controller];
+    
+    [self.window setRootViewController:navigationController];
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
